@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="el"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VG HAIR STUDIO — Κομμωτήριο Γαλάτσι</title>
+<meta name="description" content="VG HAIR STUDIO, Τράλλεων 137, Γαλάτσι. Κούρεμα, βαφή, ανταύγειες και χτένισμα. Τηλέφωνο 210 222 2002.">
+<meta name="theme-color" content="#17110D">
+<meta property="og:title" content="VG HAIR STUDIO — Κομμωτήριο Γαλάτσι">
+<meta property="og:description" content="Τράλλεων 137, Γαλάτσι · 210 222 2002">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%2317110D'/><text x='32' y='45' font-size='32' text-anchor='middle' fill='%23FAF4EC' font-family='serif'>V</text></svg>">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HairSalon","name":"VG HAIR STUDIO","image":"img/hair-u01.jpg","telephone":"+302102222002","address":{"@type":"PostalAddress","streetAddress":"Τράλλεων 137","addressLocality":"Γαλάτσι","postalCode":"11146","addressCountry":"GR"},"priceRange":"€€"}</script>
+<style>
+:root{--espresso:#17110D;--espresso2:#3D2E22;--sand:#FAF4EC;--sand2:#F4EADB;--sand3:#E9D8C2;--caramel:#A9714B;--line:rgba(23,17,13,.14)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--sand);color:var(--espresso);font-family:'Jost',system-ui,sans-serif;font-weight:300;line-height:1.65;overflow-x:hidden}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;line-height:.95;letter-spacing:-.025em;margin:0}
+.wrap{width:min(1240px,90vw);margin:0 auto}
+.label{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;font-weight:500;color:var(--caramel);display:block}
+.label.paper{color:var(--sand3)}
+header{position:fixed;top:0;left:0;right:0;z-index:80;mix-blend-mode:difference}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}
+.nav a{color:#fff;text-decoration:none;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase}
+.nav .brand{font-family:'Cormorant Garamond',serif;font-size:1.05rem;letter-spacing:.14em}
+.nav-links{display:none;gap:34px}
+@media(min-width:900px){.nav-links{display:flex}}
+.tel{font-weight:500;font-size:.85rem;letter-spacing:.06em;border-bottom:1px solid currentColor;padding-bottom:2px}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--espresso);overflow:hidden}
+.hero-img{position:absolute;inset:0}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 55%;animation:slowzoom 26s ease-out infinite alternate}
+@keyframes slowzoom{from{transform:scale(1)}to{transform:scale(1.08)}}
+.hero-img:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,17,13,.9) 0%,rgba(23,17,13,.5) 40%,rgba(23,17,13,.9) 100%)}
+.hero-in{position:relative;z-index:2;width:100%;padding:0 0 46px}
+.hero h1{color:var(--sand);font-size:clamp(3rem,11vw,9rem);margin-top:22px}
+.hero h1 em{font-style:italic;color:var(--sand3);display:block}
+.hero p{color:rgba(250,244,236,.84);max-width:44ch;margin-top:28px;font-size:1.02rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;color:rgba(250,244,236,.62);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;transition:.25s;font-family:'Jost',sans-serif}
+.btn.solid{background:var(--sand);color:var(--espresso)}
+.btn.solid:hover{background:var(--caramel);color:var(--sand)}
+.btn.line{border-color:rgba(250,244,236,.45);color:var(--sand)}
+.btn.line:hover{background:var(--sand);color:var(--espresso)}
+.ticker{background:var(--caramel);color:var(--sand);padding:11px 0;overflow:hidden;white-space:nowrap}
+.ticker .track{display:flex;width:max-content;animation:slide 34s linear infinite}
+.ticker span{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;margin-right:44px}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.statement{padding:clamp(70px,11vw,150px) 0;background:var(--sand)}
+.statement h2{font-size:clamp(2rem,5.6vw,4.4rem);max-width:22ch;margin-top:26px}
+.statement h2 em{font-style:italic;color:var(--caramel)}
+.statement .cols{display:grid;gap:34px;margin-top:52px}
+@media(min-width:820px){.statement .cols{grid-template-columns:1fr 1fr;gap:60px}}
+.statement p{color:rgba(23,17,13,.72);font-size:1rem;max-width:46ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:60px;border-top:1px solid var(--line)}
+.stats div{background:var(--sand);padding:28px 14px}
+.stats b{display:block;font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:300;line-height:1}
+.stats span{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(23,17,13,.55)}
+.svc{background:var(--espresso);color:var(--sand);padding:clamp(70px,11vw,150px) 0}
+.svc h2{font-size:clamp(2rem,5.4vw,4.2rem);margin-top:22px;color:var(--sand)}
+.svc h2 em{font-style:italic;color:var(--sand3)}
+.svc-list{margin-top:56px;border-top:1px solid rgba(250,244,236,.16)}
+.svc-row{display:grid;grid-template-columns:auto 1fr;gap:8px 20px;align-items:baseline;padding:28px 0;border-bottom:1px solid rgba(250,244,236,.16);transition:.3s}
+.svc-row:hover{padding-left:10px;border-color:var(--caramel)}
+.svc-row .n{font-size:.68rem;letter-spacing:.2em;color:var(--caramel)}
+.svc-row h3{font-size:clamp(1.35rem,3vw,2rem);color:var(--sand)}
+.svc-row p{grid-column:2;color:rgba(250,244,236,.78);font-size:.94rem;max-width:52ch;margin:0}
+@media(min-width:820px){.svc-row{grid-template-columns:60px 1fr 1.1fr}.svc-row p{grid-column:auto}}
+.split{display:grid;background:var(--sand2)}
+@media(min-width:900px){.split{grid-template-columns:1.15fr .85fr}}
+.split figure{margin:0;position:relative;min-height:52vh}
+.split figure img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.split .txt{padding:clamp(44px,7vw,90px) clamp(24px,5vw,72px)}
+.split h2{font-size:clamp(1.8rem,4.4vw,3.2rem);margin-top:20px}
+.split h2 em{font-style:italic;color:var(--caramel)}
+.split .lead{color:rgba(23,17,13,.7);max-width:40ch;margin-top:22px}
+.steps{margin-top:38px;display:grid;gap:24px}
+.step{display:grid;grid-template-columns:auto 1fr;gap:16px}
+.step b{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--caramel);line-height:1}
+.step h3{font-size:1.15rem;margin-bottom:5px}
+.step p{color:rgba(23,17,13,.66);font-size:.9rem;margin:0}
+.gal{background:var(--sand);padding:clamp(70px,11vw,150px) 0}
+.gal h2{font-size:clamp(2rem,5.4vw,4rem);margin-top:22px}
+.gal h2 em{font-style:italic;color:var(--caramel)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:48px}
+@media(min-width:820px){.grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:215px}.grid .big{grid-column:span 2;grid-row:span 2}}
+.grid button{padding:0;border:0;background:none;cursor:pointer;overflow:hidden;position:relative;aspect-ratio:1/1}
+.grid button.big{aspect-ratio:auto}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease,filter .4s}
+.grid button:hover img{transform:scale(1.06);filter:brightness(.86)}
+.grid button:focus-visible{outline:2px solid var(--caramel);outline-offset:3px}
+.band{background:var(--sand3);padding:clamp(56px,9vw,110px) 0;text-align:center}
+.band h2{font-size:clamp(1.9rem,5vw,3.6rem);max-width:26ch;margin:0 auto}
+.band h2 em{font-style:italic;color:var(--espresso2)}
+.band p{margin-top:18px;color:rgba(23,17,13,.65)}
+.band .btn.solid{background:var(--espresso);color:var(--sand);margin-top:32px}
+.band .btn.solid:hover{background:var(--caramel)}
+.contact{background:var(--espresso);color:var(--sand);padding:clamp(70px,11vw,140px) 0 110px}
+@media(min-width:900px){.contact{padding-bottom:clamp(70px,11vw,140px)}}
+.contact h2{color:var(--sand);font-size:clamp(1.9rem,5vw,3.4rem);margin-top:20px}
+.contact h2 em{font-style:italic;color:var(--sand3)}
+.contact-grid{display:grid;gap:48px;margin-top:52px}
+@media(min-width:900px){.contact-grid{grid-template-columns:1fr 1fr;gap:70px}}
+.info dl{margin:0;display:grid;gap:24px}
+.info dt{font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--caramel);margin-bottom:6px}
+.info dd{margin:0;font-size:1.05rem;color:rgba(250,244,236,.9)}
+.info a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(250,244,236,.3)}
+form{display:grid;gap:16px;align-content:start}
+form label{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(250,244,236,.5);display:block;margin-bottom:4px}
+input,textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(250,244,236,.28);color:var(--sand);padding:10px 0;font-family:inherit;font-size:1rem}
+input:focus,textarea:focus{outline:none;border-color:var(--caramel)}
+textarea{resize:vertical;min-height:86px}
+form button{margin-top:10px;background:var(--sand);color:var(--espresso);border:0;padding:16px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;transition:.25s;font-family:'Jost',sans-serif}
+form button:hover{background:var(--caramel);color:var(--sand)}
+.formnote{font-size:.78rem;color:rgba(250,244,236,.5);margin-top:6px}
+.map{margin-top:34px;border:1px solid rgba(250,244,236,.16)}
+.map iframe{display:block;width:100%;height:270px;border:0;filter:grayscale(1) contrast(1.05);background:#2b211a}
+.map .fallback{display:none;padding:18px;font-size:.9rem;color:rgba(250,244,236,.8);border:1px solid rgba(250,244,236,.18)}
+.map .fallback a{color:var(--sand3)}
+footer{background:var(--espresso);border-top:1px solid rgba(250,244,236,.14);color:rgba(250,244,236,.55);padding:34px 0 96px;font-size:.74rem}
+footer .f{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:space-between;align-items:center}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;background:var(--espresso);border-top:1px solid rgba(250,244,236,.14)}
+.callbar a{flex:1;text-align:center;padding:16px;color:var(--sand);text-decoration:none;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
+.callbar a+a{background:var(--caramel)}
+@media(min-width:900px){.callbar{display:none}footer{padding-bottom:34px}}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(23,17,13,.97);display:none;place-items:center;padding:20px}
+.lb.on{display:grid}
+.lb img{max-width:94vw;max-height:84vh;object-fit:contain}
+.lb button{position:absolute;background:none;border:1px solid rgba(250,244,236,.3);color:var(--sand);width:48px;height:48px;cursor:pointer;font-size:1.3rem}
+.lb .x{top:20px;right:20px}.lb .p{left:16px;top:calc(50% - 24px)}.lb .n{right:16px;top:calc(50% - 24px)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.hero-img img{animation:none}.ticker div{animation:none}}
+</style>
+</head>
+<body>
+
+<header><div class="wrap nav">
+  <a class="brand" href="#top">VG HAIR STUDIO</a>
+  <nav class="nav-links">
+    <a href="#ypiresies">Υπηρεσίες</a><a href="#choros">Ο χώρος</a><a href="#douleia">Η δουλειά</a><a href="#epikoinonia">Επικοινωνία</a>
+  </nav>
+  <a class="tel" href="tel:2102222002">210 222 2002</a>
+</div></header>
+
+<section class="hero" id="top">
+  <div class="hero-img"><img src="img/hair-u03.jpg" alt="Εσωτερικό του VG HAIR STUDIO — καρέκλες και καθρέφτες" fetchpriority="high"></div>
+  <div class="hero-in"><div class="wrap">
+    <span class="label paper">Κομμωτήριο · Γαλάτσι</span>
+    <h1>Χρώμα που<br><em>δείχνει ζωντανό.</em></h1>
+    <p>Κούρεμα, βαφή, ανταύγειες και χτένισμα στο Γαλάτσι. Δουλεύουμε με επαγγελματικά χρώματα και παίρνουμε τον χρόνο που χρειάζεται κάθε κεφάλι.</p>
+    <div class="hero-meta"><span>Τράλλεων 137</span><span>Αγία Ειρήνη</span><span>111 46</span></div>
+    <div class="hero-cta">
+      <a class="btn solid" href="tel:2102222002">Καλέστε · 210 222 2002</a>
+      <a class="btn line" href="#epikoinonia">Ζητήστε ραντεβού</a>
+    </div>
+  </div></div>
+</section>
+
+<div class="ticker"><div class="track"><span>Κούρεμα ◆</span><span>Βαφή ◆</span><span>Ανταύγειες ◆</span><span>Χτένισμα ◆</span><span>Περιποίηση ◆</span><span>Κούρεμα ◆</span><span>Βαφή ◆</span><span>Ανταύγειες ◆</span><span>Χτένισμα ◆</span><span>Περιποίηση ◆</span><span>Κούρεμα ◆</span><span>Βαφή ◆</span><span>Ανταύγειες ◆</span><span>Χτένισμα ◆</span><span>Περιποίηση ◆</span><span>Κούρεμα ◆</span><span>Βαφή ◆</span><span>Ανταύγειες ◆</span><span>Χτένισμα ◆</span><span>Περιποίηση ◆</span></div></div>
+
+<section class="statement"><div class="wrap rv">
+  <span class="label">Η επιχείρηση</span>
+  <h2>Ένα κομμωτήριο που<br><em>δεν βιάζεται.</em></h2>
+  <div class="cols">
+    <p>Το VG HAIR STUDIO είναι γυναικείο, ανδρικό και παιδικό κομμωτήριο στην Αγία Ειρήνη Γαλατσίου. Δουλεύουμε με ραντεβού, ώστε η καρέκλα να είναι δική σας για όση ώρα χρειάζεται η υπηρεσία.</p>
+    <p>Χρώμα με προσοχή στην αφετηρία και το μήκος. Κούρεμα που στέκει και τη δεύτερη μέρα. Χτένισμα για τις περιπτώσεις που μετράει η λεπτομέρεια.</p>
+  </div>
+  <div class="stats">
+    <div><b>3</b><span>Γυναικείο · Ανδρικό · Παιδικό</span></div>
+    <div><b>01</b><span>Καρέκλα · ένα ραντεβού τη φορά</span></div>
+    <div><b>210</b><span>222 2002 · τηλεφωνικά</span></div>
+  </div>
+</div></section>
+
+<section class="svc" id="ypiresies"><div class="wrap rv">
+  <span class="label">Υπηρεσίες</span>
+  <h2>Τι <em>κάνουμε.</em></h2>
+  <div class="svc-list">
+    <div class="svc-row"><span class="n">01</span><h3>Κούρεμα Γυναικείο</h3><p>Σχήμα που δουλεύει με την υφή των μαλλιών σας, όχι κόντρα σε αυτήν.</p></div>
+    <div class="svc-row"><span class="n">02</span><h3>Κούρεμα Ανδρικό</h3><p>Καθαρή γραμμή σε κρόταφους και σβέρκο, με τακτοποιημένη κορυφή.</p></div>
+    <div class="svc-row"><span class="n">03</span><h3>Κούρεμα Παιδικό</h3><p>Χωρίς φασαρία και βιασύνη — με τον χρόνο που χρειάζεται το παιδί.</p></div>
+    <div class="svc-row"><span class="n">04</span><h3>Βαφή</h3><p>Πλήρες χρώμα με επιλογή απόχρωσης μαζί σας, μετά από έλεγχο της αφετηρίας.</p></div>
+    <div class="svc-row"><span class="n">05</span><h3>Ανταύγειες · Μπαλαγιάζ</h3><p>Διαβάθμιση που δείχνει φυσική — ζητάει περισσότερο χρόνο, το λέμε από την αρχή.</p></div>
+    <div class="svc-row"><span class="n">06</span><h3>Χτένισμα</h3><p>Για γάμο, βάπτιση ή εκδήλωση. Δοκιμή πριν την ημέρα, όταν χρειάζεται.</p></div>
+  </div>
+</div></section>
+
+<section class="split" id="choros">
+  <figure><img src="img/hair-u05.jpg" alt="Χώρος κομμωτηρίου — καρέκλες και καθρέφτης" loading="lazy"></figure>
+  <div class="txt rv">
+    <span class="label">Ο χώρος</span>
+    <h2>Ξύλο, καθρέφτης,<br><em>και μία καρέκλα.</em></h2>
+    <p class="lead">Δεν κάνουμε πολλά κεφάλια μαζί. Κλείνετε ραντεβού και η καρέκλα είναι δική σας για όλη τη διάρκεια της υπηρεσίας.</p>
+    <div class="steps">
+      <div class="step"><b>01</b><div><h3>Ραντεβού</h3><p>Τηλεφωνικά στο 210 222 2002. Σας λέμε ακριβώς πόση ώρα θα χρειαστεί.</p></div></div>
+      <div class="step"><b>02</b><div><h3>Συζήτηση</h3><p>Τι σας ενοχλεί σήμερα, τι θέλετε να δείχνει την επόμενη φορά.</p></div></div>
+      <div class="step"><b>03</b><div><h3>Αποτέλεσμα</h3><p>Φεύγετε έτοιμοι, με δύο οδηγίες για το πώς θα το κρατήσετε σπίτι.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="gal" id="douleia"><div class="wrap rv">
+  <span class="label">Η δουλειά</span>
+  <h2>Κάθε κεφάλι<br><em>δική του ιστορία.</em></h2>
+  <div class="grid" id="grid">
+    <button class="big"><img src="img/hair-u03.jpg" alt="Κομμωτήριο — σταθμός styling" loading="lazy"></button>
+    <button><img src="img/hair-u07.jpg" alt="Καρέκλα και καθρέφτης" loading="lazy"></button>
+    <button><img src="img/hair-u09.jpg" alt="Γωνία περιποίησης" loading="lazy"></button>
+    <button><img src="img/hair-u11.jpg" alt="Χώρος υποδοχής με προϊόντα" loading="lazy"></button>
+    <button><img src="img/hair-u14.jpg" alt="Χτένισμα σε εξέλιξη" loading="lazy"></button>
+    <button><img src="img/hair-u15.jpg" alt="Στέγνωμα και styling" loading="lazy"></button>
+    <button><img src="img/hair-u16.jpg" alt="Κούρεμα σε καρέκλα" loading="lazy"></button>
+    <button><img src="img/hair-u20.jpg" alt="Λούσιμο" loading="lazy"></button>
+  </div>
+  <p class="formnote" style="color:rgba(23,17,13,.45);margin-top:18px;max-width:60ch">Φωτογραφίες χώρου και υπηρεσίας. Φωτογραφίες πελατών δεν δημοσιεύονται χωρίς άδεια.</p>
+</div></section>
+
+<section class="band"><div class="wrap rv">
+  <h2>Έχετε κάτι στο μυαλό σας;<br><em>Πείτε το και το φτιάχνουμε μαζί.</em></h2>
+  <p>Τράλλεων 137, Αγία Ειρήνη Γαλάτσι · καλέστε για ωράριο και διαθεσιμότητα.</p>
+  <a class="btn solid" href="tel:2102222002">Καλέστε · 210 222 2002</a>
+</div></section>
+
+<section class="contact" id="epikoinonia"><div class="wrap rv">
+  <span class="label">Επικοινωνία</span>
+  <h2>Πού θα μας βρείτε<br><em>στο Γαλάτσι.</em></h2>
+  <div class="contact-grid">
+    <div class="info">
+      <dl>
+        <div><dt>Διεύθυνση</dt><dd>Τράλλεων 137, Αγία Ειρήνη<br>Γαλάτσι 111 46</dd></div>
+        <div><dt>Τηλέφωνο</dt><dd><a href="tel:2102222002">210 222 2002</a></dd></div>
+        <div><dt>Κινητό</dt><dd><a href="tel:6981888707">698 188 8707</a></dd></div>
+        <div><dt>Ωράριο</dt><dd>Καλέστε για ωράριο και διαθεσιμότητα</dd></div>
+      </dl>
+      <div class="map"><iframe id="gmap" src="https://www.google.com/maps?q=%CE%A4%CF%81%CE%AC%CE%BB%CE%BB%CE%B5%CF%89%CE%BD%20137%2C%20%CE%93%CE%B1%CE%BB%CE%AC%CF%84%CF%83%CE%B9&output=embed" title="Χάρτης — Τράλλεων 137, Γαλάτσι" loading="lazy"></iframe><div class="fallback" id="mapfb">Τράλλεων 137, Αγία Ειρήνη, Γαλάτσι 111 46 — <a href="https://www.google.com/maps/search/?api=1&amp;query=%CE%A4%CF%81%CE%AC%CE%BB%CE%BB%CE%B5%CF%89%CE%BD%20137%2C%20%CE%93%CE%B1%CE%BB%CE%AC%CF%84%CF%83%CE%B9" target="_blank" rel="noopener">άνοιγμα στους χάρτες</a></div></div>
+    </div>
+    <form id="f" novalidate>
+      <div><label for="n">Όνομα</label><input id="n" name="name" required autocomplete="name"></div>
+      <div><label for="t">Τηλέφωνο</label><input id="t" name="phone" required inputmode="tel" autocomplete="tel"></div>
+      <div><label for="s">Υπηρεσία / τι θέλετε</label><textarea id="s" name="message" rows="3"></textarea></div>
+      <button type="submit">Αποστολή αιτήματος</button>
+      <p class="formnote" id="st">Σας καλούμε για επιβεβαίωση της ώρας.</p>
+    </form>
+  </div>
+</div></section>
+
+<footer><div class="wrap f">
+  <span>VG HAIR STUDIO · Τράλλεων 137, Γαλάτσι</span>
+  <span>Κατασκευή ιστοσελίδας: AION Web Solutions</span>
+</div></footer>
+
+<div class="callbar"><a href="tel:2102222002">Κλήση 210 222 2002</a><a href="#epikoinonia">Ραντεβού</a></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Φωτογραφία">
+  <button class="x" aria-label="Κλείσιμο" data-act="x">✕</button>
+  <button class="p" aria-label="Προηγούμενη" data-act="p">‹</button>
+  <img id="lbimg" alt="">
+  <button class="n" aria-label="Επόμενη" data-act="n">›</button>
+</div>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  var imgs=[].slice.call(document.querySelectorAll('#grid button'));
+  var lb=document.getElementById('lb'),lbi=document.getElementById('lbimg'),cur=0;
+  function show(i){cur=(i+imgs.length)%imgs.length;var s=imgs[cur].querySelector('img');lbi.src=s.src;lbi.alt=s.alt;lb.classList.add('on');document.body.style.overflow='hidden'}
+  function hide(){lb.classList.remove('on');document.body.style.overflow=''}
+  imgs.forEach(function(b,i){b.addEventListener('click',function(){show(i)})});
+  lb.addEventListener('click',function(e){var a=e.target.getAttribute('data-act');if(a==='x'||e.target===lb)hide();if(a==='p')show(cur-1);if(a==='n')show(cur+1)});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')hide();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+  // map fallback when embed doesn't load (mobile data saver, blocked iframes)
+  var gm=document.getElementById('gmap'),fb=document.getElementById('mapfb');
+  setTimeout(function(){ try{ if(!gm.contentWindow||gm.contentWindow.length===0){} }catch(e){} },0);
+  gm.addEventListener('error',function(){ gm.style.display='none'; fb.style.display='block' });
+
+  var f=document.getElementById('f'),st=document.getElementById('st');
+  f.addEventListener('submit',async function(e){
+    e.preventDefault();
+    var n=f.name.value.trim(),p=f.phone.value.trim(),m=f.message.value.trim();
+    if(!n||!p){st.textContent='Συμπληρώστε όνομα και τηλέφωνο.';return}
+    st.textContent='Αποστολή…';
+    try{
+      var r=await fetch('https://formsubmit.co/ajax/info@aionweb.gr',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({_subject:'Νέο αίτημα - VG HAIR STUDIO',name:n,phone:p,message:m,_template:'table'})});
+      if(!r.ok)throw 0;
+      st.textContent='Το αίτημα στάλθηκε. Θα επικοινωνήσουμε.';f.reset();
+    }catch(x){st.textContent='Δεν ολοκληρώθηκε. Καλέστε στο 210 222 2002.'}
+  });
+})();
+</script>
+</body></html>
