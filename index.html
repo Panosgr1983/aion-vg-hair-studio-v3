@@ -121,6 +121,8 @@ form button:hover{background:var(--caramel);color:var(--sand)}
 .map .fallback a{color:var(--sand3)}
 footer{background:var(--espresso);border-top:1px solid rgba(250,244,236,.14);color:rgba(250,244,236,.55);padding:34px 0 96px;font-size:.74rem}
 footer .f{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:space-between;align-items:center}
+footer a{color:rgba(250,244,236,.8);text-decoration:none;border-bottom:1px solid rgba(250,244,236,.3);transition:.2s}
+footer a:hover{color:var(--sand3);border-color:var(--sand3)}
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;background:var(--espresso);border-top:1px solid rgba(250,244,236,.14)}
 .callbar a{flex:1;text-align:center;padding:16px;color:var(--sand);text-decoration:none;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase}
 .callbar a+a{background:var(--caramel)}
@@ -248,8 +250,8 @@ footer .f{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:space-betwee
 </div></section>
 
 <footer><div class="wrap f">
-  <span>VG HAIR STUDIO · Τράλλεων 137, Γαλάτσι</span>
-  <span>Κατασκευή ιστοσελίδας: AION Web Solutions</span>
+  <span>© <span id="y"></span> VG HAIR STUDIO · Τράλλεων 137, Γαλάτσι</span>
+  <span>Κατασκευή ιστοσελίδας: <a href="https://aionweb.gr" target="_blank" rel="noopener">AION Web Solutions ↗</a></span>
 </div></footer>
 
 <div class="callbar"><a href="tel:2102222002">Κλήση 210 222 2002</a><a href="#epikoinonia">Ραντεβού</a></div>
@@ -264,6 +266,7 @@ footer .f{display:flex;flex-wrap:wrap;gap:14px 30px;justify-content:space-betwee
 <script>
 (function(){
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  var ye=document.getElementById('y'); if(ye) ye.textContent=new Date().getFullYear();
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
   var imgs=[].slice.call(document.querySelectorAll('#grid button'));
   var lb=document.getElementById('lb'),lbi=document.getElementById('lbimg'),cur=0;
